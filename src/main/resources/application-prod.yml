@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod & !sandbox"
+
+clients:
+  t-invest:
+    url: https://invest-public-api.tbank.ru/rest
+  llm:
+    url: https://api.aitunnel.ru

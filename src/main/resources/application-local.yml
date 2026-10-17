@@ -1,0 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:sqlite:drv-analyst.sqlite
+    driver-class-name: org.sqlite.JDBC
+    username: sa
+    password: sa

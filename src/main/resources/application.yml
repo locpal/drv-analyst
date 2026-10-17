@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: drv-analyst
+  liquibase:
+    change-log: classpath:migration/changelog.xml
+  cloud:
+    openfeign:
+      client:
+        config:
+          llm-client:
+            connectTimeout: 5000
+            readTimeout: 120000
+
+clients:
+  t-invest:
+    token: ${T_INVEST_TOKEN}
+  llm:
+    token: ${LLM_TOKEN}
+    model: gemini-2.5-flash

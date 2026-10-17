@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <include file="migration/sql/00001_init_candles_history.sql"/>
+    <include file="migration/sql/00002_init_instrument_passport_dict.sql"/>
+    <include file="migration/sql/00003_instrument_passport_details.sql"/>
+    <include file="migration/sql/00004_instrument_passport_provider_id_key.sql"/>
+    <include file="migration/sql/00005_analysis_runs.sql"/>
+    <include file="migration/sql/00006_market_snapshots.sql"/>
+    <include file="migration/sql/00007_analysis_metrics.sql"/>
+    <include file="migration/sql/00008_analysis_steps.sql"/>
+    <include file="migration/sql/00009_llm_forecasts.sql"/>
+    <include file="migration/sql/00010_llm_validation.sql"/>
+
+</databaseChangeLog>
